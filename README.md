@@ -61,3 +61,10 @@ battlecruiser.move("9시")
 벌쳐 : 11시 방향으로 이동합니다. [속도 10]
 [공중 유닛 이동]
 배틀크루저 : 9시 방향으로 날아갑니다.[속도 3].
+
+# 건물
+class BuildingUnit(Unit):
+    def __init__(self, name, hp, location):
+        pass
+# 서플라이 디폿 : 건물, 1개 건물 = 8유닛.
+supply_depot = BuildingUnit("서플라이 디폿", 500, "7시")
